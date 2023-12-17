@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Aaron Tran Portfolio</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="css/vendor.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-body homepage post-template" data-bs-spy="scroll" data-bs-target="#header-nav" tabindex="0">
+  <a class="menu-btn"><span></span></a>
+
+  <div class="container-fluid overflow-hidden">
+
+    <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
+      <div class="header-wrap d-flex flex-column justify-content-between h-100">
+        <div class="navigation">
+          <div class="site-logo mt-5">
+            <p class="fs-1"><a href="index.html">Aaron Tran</a></p>
+          </div>
+
+          <!-- Menu -->
+          <nav id="one-page-menu" class="vertical-menu my-5">
+            <ul class="menu-list list-unstyled">
+              <li><a href="#home" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#experience" class="nav-link">Experience</a></li>
+              <li><a href="#portfolio" class="nav-link">Project</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mt-5">
+          <div class="email-links">
+            <a href="tel:0466223845" class=" d-flex">0466223845</a>
+          </div>
+          <div class="email-links">
+            <a href="mailto:tranducanh211103@gmail.com" class="pb-3 mb-3 border-bottom d-flex">tranducanh211103@gmail.com</a>
+          </div>
+          <ul class="list-unstyled d-flex justify-content-start flex-wrap gap-3">
+            <li>
+              <a href="https://www.linkedin.com/in/tran-duc-anh/" class="text-dark" target="_blank" >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z" fill="#000000"/>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:tranducanh211103@gmail.com" class="text-dark" target="_blank">
+                <svg fill="#000000" width="24" height="24" viewBox="0 0 14 14" role="img" focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="m 13,3.25 0,7.5 c 0,0.425 -0.325,0.75 -0.75,0.75 l -0.75,0 0,-6.8065 L 7,7.925 2.5,4.6935 2.5,11.5 1.75,11.5 C 1.3245,11.5 1,11.175 1,10.75 L 1,3.25 C 1,3.0375 1.081,2.85 1.2155,2.716 1.35,2.58 1.538,2.5 1.75,2.5 L 2,2.5 7,6.125 12,2.5 l 0.25,0 c 0.2125,0 0.4,0.081 0.5345,0.216 C 12.9195,2.85 13,3.0375 13,3.25 Z"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/tranducanh2111" class="text-dark" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main class="col-lg-10 offset-lg-2">
+      <div class="container">
+
+        <!-- content wrapper -->
+        <div class="justify-content-center px-1 mx-1 px-xl-5 mx-xl-5">
+
+          <section id="home" class="py-5 bg-text" data-text="01">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="banner-image text-center" data-aos="fade-right">
+                  <img src="images/avatar.png" alt="banner" class="img-fluid avatar">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="banner-content my-1 pt-1 my-lg-5 pt-lg-5" data-aos="fade-in">
+                  <span class="text-muted text-uppercase">Data Analyst / Software Developer / Web Developer</span>
+                  <h1 class="banner-title display-xl lh-1 txt-fx slide-up">Aaron Tran</h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-lg-3">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <span>01</span>
+                  <h3 class="sub-heading">Data Analyst</h3>
+                  <p>Unveiled actionable insights from complex datasets, driving informed decision-making for business optimization.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="icon-box" data-aos="fade-up">
+                  <span>02</span>
+                  <h3 class="sub-heading">Software Developer</h3>
+                  <p>Developed cutting-edge software solutions, optimizing functionality for seamless user experiences.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <span>03</span>
+                  <h3 class="sub-heading">Front-end Developer</h3>
+                  <p>Crafted visually stunning websites, blending creativity and functionality for an enhanced user journey.</p>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <a href="#portfolio" class="btn btn-dark text-uppercase py-4 px-5" data-aos="fade-up" data-aos-delay="300">View All Work</a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Introduction Section -->
+          <section id="about" class="my-5 py-5 bg-text" data-text="03">
+            <div class="row justify-content-center mb-5">
+              <div class="col-lg-8" data-aos="fade-up">
+                <span class="text-muted text-uppercase">introduction</span>
+                <h2 class="display-1 txt-fx slide-up m-0">Proactive</h2>
+                <h2 class="display-1 txt-fx slide-up">Collaborative</h2>
+                <h2 class="display-1 txt-fx slide-up">Adaptive</h2>
+                <h2 class="display-1 txt-fx slide-up">Empathy</h2>
+                <p>Experienced software developer and Data Analyst with 2+ years of experience developing complex website interfaces using NextJS, Tailwind, and TypeScript. Proficient in problem-solving and design, I specialise in delivering high-quality, user-centric solutions with cutting-edge technologies. My motivation for creating exceptional user experiences is matched by my dedication to continuous learning. Eager to contribute my expertise, adapt to new challenges, and play a vital role in a full-stack developer position. I'm committed to enhancing my skills and contributing to the company's success.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <h3 class="info-title" data-aos="fade-up">Technical Skills</h3>
+                <div class="info-element py-4" data-aos="fade-up">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th scope="row">Database</th>
+                        <td>MySQL, MongoDB, PostgreSQL, HeidiSQL</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Programing Language</th>
+                        <td>HTML, CSS, JavaScript, ReactJS, NodeJS, Typescript, NestJS, NextJS, Java</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Design &amp; Document</th>
+                        <td>Figma, Jira, Slack, Confluence, Google Doc, Microsoft Excel</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cloud</th>
+                        <td>AWS</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <h3 class="info-title" data-aos="fade-up">Soft Skills</h3>
+                <div class="info-element py-4" data-aos="fade-up">
+                  <ul>
+                    <li>Communication</li>
+                    <li>Continuous Learning</li>
+                    <li>Detail-oriented</li>
+                    <li>Adaptability</li>
+                    <li>Empathy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Skill, Experience, Reference Section -->
+          <section id="experience" class="my-5 py-5 bg-text" data-text="02">
+            <div class="row d-flex flex-wrap" data-aos="fade-up">
+              <h2 class="display-4 txt-fx slide-up">Experiences</h2>
+              <div class="col-lg-6 pb-5">
+                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
+                  <span class="meta-date">June 2021 - Present</span>
+                  <h3 class="info-title m-1">Software Developer</h3>
+                  <h4 class="mb-3 fs-5">Jung Talents</h4>
+                  <p class="m-0 fw-bold fs-6">Responsibilities:</p>
+                  <ul>
+                    <li>Designed commercial web applications using modern technologies, including <strong>NextJS, TypeScript, and Tailwind</strong>, resulting in high-quality and visually appealing websites.</li>
+                    <li>Collaborated with the Simple English Project, Carina Eye Care team leader to <strong>examine business logic</strong> and <strong>plan new features</strong>.</li>
+                    <li>Provided <strong>ongoing support and maintenance</strong> for colleagues' tasks in an <strong>Agile environment</strong>, ensuring prompt bug fixes and updates. Achieved a <strong>20% reduction</strong> in bug resolution time.</li>
+                    <li>Collaborated in Agile/Scrum development teams to deliver high-quality software in sprints. Utilized Slack, Trello for project tracking and commmunication.</li>
+                    <li>Demonstrated a commitment to <strong>ongoing learning and professional development</strong> in the rapidly evolving technology landscape.</li>
+                    <li>Interpreted data within the context of business or project goals and <strong>effectively communicated findings</strong> to non-technical stakeholders.</li>
+                  </ul>
+                  <p class="m-0 fw-bold fs-6">Achievements:</p>
+                  <ul>
+                    <li><strong>Led training sessions</strong> for colleagues, enhancing product understanding, boosting client satisfaction, and accelerating sprint phases by <strong>2 weeks</strong> ahead of schedule.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6 pb-5">
+                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="300">
+                  <span class="meta-date">October 2023 - Present</span>
+                  <h3 class="info-title">Data Analyst &amp; Programmer</h3>
+                  <h4 class="mb-3 fs-5">Cider House ICT</h4>
+                  <p class="m-0 fw-bold fs-6">Responsibilities:</p>
+                  <ul>
+                    <li>Working closely with Tech Leader to <strong>analyse and investigate the legacy system</strong> to migrate the importing order process in to the new database and application.</li>
+                    <li>Conducted <strong>advanced SQL queries, and indexes</strong>, and implemented multiple replications to enable data sync between different databases.</li>
+                    <li>Evaluated and refined clean datasets by <strong>eliminating redundancies, inaccuracies, and inconsistencies</strong> through data wrangling and transformation, resulting in a <strong>20% improvement in data accuracy</strong>.</li>
+                    <li>Applied database <strong>reverse engineering process, SQL queries</strong> to conceptualize the legacy database to migrate the whole application to the current company application - <strong>Petbooqz</strong>.</li>
+                    <li>Led the documentation of client database design, structure, and the data migration process into our company system.</li>
+                    <li>Conducted data conversion from client's legacy system to Petbooqz during Cut Over and Go Live phases, ensuring continuous updates to customer databases.</li>
+                  </ul>
+                  <p class="m-0 fw-bold fs-6">Achievements:</p>
+                  <ul>
+                    <li>Integrated database from multiple difference sources such as OpenVPMS, Vision.</li>
+                    <li>Significantly streamlined the project timeline, enabling the delivery of a test prototype to the customer within one week, a notable improvement from the previous three-week timeline.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex flex-wrap" data-aos="fade-up">
+              <div class="col-lg-6 pb-5">
+                <!-- <span class="text-muted text-uppercase">BIODATA</span> -->
+                <h2 class="display-4 txt-fx slide-up">Education</h2>
+                <div class="data-info py-3" data-aos="fade-up">
+                  <span class="meta-date">2021 - 2024</span>
+                  <h3 class="info-title">Bachelor in Information and Communication Technology</h3>
+                  <p>Swinburne University of Technology</p>
+                </div>
+              </div>
+              <div class="col-lg-6 pb-5">
+                <h2 class="display-4 txt-fx slide-up">References</h2>
+                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
+                  <h3 class="info-title">Mr. Bob Mai</h3>
+                  <span class="meta-date">CEO &amp; Founder</span>
+                  <p class="m-0">Mobile: <a href="tel:0467658839">0467658839</a></p>
+                  <p class="m-0">Email: <a href="mailto:bob.mai@jungtalents.com">bob.mai@jungtalents.com</a></p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="300">
+                  <h3 class="info-title">Mr. Doug Bail</h3>
+                  <span class="meta-date">Director</span>
+                  <p class="m-0">Phone: <a href="tel:0397643638">0397643638</a></p>
+                  <p class="m-0">Email: <a href="mailto:db@ciderhouse.com.au">db@ciderhouse.com.au</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="portfolio" class="my-5 py-5 bg-text" data-text="04">
+            <div class="section-header my-5" data-aos="fade-up">
+              <div class="row justify-content-center g-5">
+                <div class="col-lg-5">
+                  <span class="text-muted text-uppercase">some of my recent works</span>
+                  <h2 class="display-1 txt-fx slide-up">Project</h2>
+                </div>
+                <div class="col-lg-5" data-aos="fade-up">
+                  <p>Step into my aesthetic modern projects, and user-friendly navigation to highlight the essence of my professional journey.</p>
+                  <a href="https://github.com/tranducanh2111" class="btn btn-dark px-5 py-4" target="_blank">VIEW ALL</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper portfolio-Swiper portfolio-content py-4" data-aos="fade-up">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <a href="single-portfolio.html" title="portfolio details"><img src="images/port-item1.jpg" alt="portfolio" class="img-fluid"></a>
+                  </div>
+                  <div class="caption d-flex justify-content-between align-items-center">
+                    <div class="title">Simple English Project</div>
+                    <a href="#" class="image-format bg-orange">Visit</a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <a href="single-portfolio.html" title="portfolio details"><img src="images/port-item2.jpg"
+                        alt="portfolio" class="img-fluid"></a>
+                  </div>
+                  <div class="caption d-flex justify-content-between align-items-center">
+                    <div class="title">Carina Eye Care Project</div>
+                    <a href="#" class="image-format bg-orange">Visit</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination mt-5"></div>
+            </div>
+          </section>
+
+          <section id="contact" class="my-5 py-5 bg-text" data-text="05">
+            <div class="container">
+              <div class="row justify-content-center mb-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                  <span class="text-muted text-uppercase">Personal Info</span>
+                  <h2 class="display-1 txt-fx slide-up">Contact Me</h2>
+                  <p>Open to new opportunities and excited about the prospect of contributing to your company's growth. Let's schedule a conversation to explore how I can bring value to your team.</p>
+                </div>
+              </div>
+              <div class="row d-flex g-5">
+                <div class="col-lg-7" data-aos="fade-up">
+                  <h3>Frequently Asked Questions</h3>
+                  <div class="accordion" id="accordionExample2">
+                    <!-- Question 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse1" aria-expanded="true"
+                          aria-controls="accordion-collapse1">
+                          A brief about myself
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse1" class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <p>
+                            As a proactive and adaptable professional, I've accrued over 2 years of diverse experience in software development, and data analysis. I've successfully led teams in delivering impactful projects like the Simple English IELTS platform, the Carina Eye Care website migration, and Vision, OpenVPMS application data migrating. My empathetic working style ensures open communication and effective collaboration.
+                            <br><br>My enthusiasm for cutting-edge technologies, showcased through proficiency in Next.js, TypeScript, and database management, aligns seamlessly with my career goal to evolve into a skilled Data Engineer. The prospect of joining as a Technology Consultant role excites me as it provides a unique opportunity to leverage my existing skills, while also affording the chance to further develop expertise in data engineering. I am eager to contribute my technical prowess, collaborative spirit, and passion for transformative solutions to drive innovation in the field of data engineering.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse2" aria-expanded="false"
+                          aria-controls="accordion-collapse2">
+                          What are my strengths and weaknesses?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <p>
+                            <strong>Strengths:</strong>
+                            <br>An inherent strength of mine is adaptability. I thrive on the challenge of taking on projects involving technologies that our company hasn't encountered before, exemplified by successful implementations like the data migration from a legacy system - OpenVPMS. Continuous learning is my other strength, ensuring that my skills remain at the forefront of technology and fostering innovation in the work environment. Additionally, effective communication is a cornerstone of my approach. I take responsibility for thoroughly documenting and explaining intricate technologies to my tech leads, facilitating seamless collaboration.
+                            <br><br>
+                            <strong>Weaknesses:</strong>
+                            <br>In several instances, particularly during high-stakes projects such as the Simple English IELTS platform, I noticed that my time management skills needed refinement due to taking on too many tasks. The complexity of the tasks and my commitment to delivering the highest quality sometimes led to challenges in meeting deadlines efficiently. To address this, I proactively took steps to improve my time management strategies. I implemented a more structured approach to task prioritization, breaking down complex projects into smaller, manageable tasks. I began using project management tools to track progress and deadlines, allowing for a more systematic and organized workflow. Additionally, I sought guidance from mentors and colleagues to gain insights into effective time management practices. This improvement has not only positively impacted my task delivery but also enhanced overall efficiency and collaboration within the team.
+                          </p>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse3" aria-expanded="false"
+                          aria-controls="accordion-collapse3">
+                          What are the skills I am planning to gain? How do I apply it for your enterprise?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <p>I'm committed to continuous learning and growth, recognizing the pivotal role it plays in staying at the forefront of evolving industries. Acquiring business knowledge is integral to strategically impacting projects, aligning my decisions with broader business objectives. This commitment to learning is not just a personal goal but aligns with your ethos, fostering a culture of innovation and entrepreneurship. With a strong business acumen, I aim to contribute strategically, driving impactful client experiences, create sustainable change, and reimagining possibilities for clients and the industry at large.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Question 4 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse4" aria-expanded="false"
+                          aria-controls="accordion-collapse4">
+                          What is my ideal work environment?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse4" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <p>In my ideal work environment, I thrive in a culture that encourages curiosity and continuous learning. I seek exposure to diverse perspectives, engaging with clients and colleagues across all levels—from partners to managers and seniors. I find fulfillment in a collaborative space where technical knowledge and expertise are freely shared, fostering a wealth of insights to carry into future projects. I appreciate working among like-minded professionals who genuinely support each other's goals. An ideal setting for me is one that is flexible, fast-paced, and supportive, where proactiveness and commitment to asking questions are valued and contribute to a dynamic and enriching workplace.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Question 5 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse5" aria-expanded="false"
+                          aria-controls="accordion-collapse5">
+                          When I am balancing multiple projects, how do I keep myself organized?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse5" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Question 6 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse6" aria-expanded="false"
+                          aria-controls="accordion-collapse6">
+                          How do I deal with pressure or stressful situations?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse6" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          Ut enim ad minim veniam,
+                          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="right-content" data-aos="fade-up">
+
+                    <div class="element-header align-right">
+                      <h3>Feel free to send me a message or any word of appreciation.</h3>
+                    </div>
+
+                    <div class="contact-form py-4">
+                      <form id="form" class="form-group">
+                        <div class="pb-2"><input type="text" name="name" placeholder="Your Full Name"
+                            class="form-control">
+                        </div>
+                        <div class="pb-2"><input type="text" name="address" placeholder="Your Email Address"
+                            class="form-control"></div>
+                        <div class="pb-2"><textarea placeholder="Your Message" rows="6" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-dark w-100 btn-rounded">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
