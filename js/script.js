@@ -33,8 +33,8 @@
 
 
   // Portfolio Slider
-  var swiper = new Swiper(".portfolio-Swiper", {
-    slidesPerView: 4,
+  var swiper1 = new Swiper(".portfolio-Swiper", {
+    slidesPerView: 2,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination",
@@ -45,10 +45,60 @@
         slidesPerView: 1,
       },
       1200: {
-        slidesPerView: 3,
-        spaceBetween: 30,
+        slidesPerView: 2,
+        spaceBetween: 40,
       },
     },
+  });
+
+  const progressCircle1 = document.querySelector(".autoplay-progress-1 svg");
+  const progressContent1 = document.querySelector(".autoplay-progress-1 span");
+
+  // Portfolio Project 1
+  var swiper2 = new Swiper(".portfolio-Swiper-Project-1", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle1.style.setProperty("--progress", 1 - progress);
+        progressContent1.textContent = `${Math.ceil(time / 1000)}s`;
+      }
+    }
+  });
+
+  const progressCircle2 = document.querySelector(".autoplay-progress-2 svg");
+  const progressContent2 = document.querySelector(".autoplay-progress-2 span");
+
+  // Portfolio Project 2
+  var swiper2 = new Swiper(".portfolio-Swiper-Project-2", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle2.style.setProperty("--progress", 1 - progress);
+        progressContent2.textContent = `${Math.ceil(time / 1000)}s`;
+      }
+    }
   });
 
   // Animate Texts
@@ -60,7 +110,6 @@
       var stagger = 10;
       var words = this.textContent.split(/\s/);
       var arrWords = new Array();
-      
       $.each( words, function( key, value ) {
         newstr = '<span class="word">';
 
