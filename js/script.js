@@ -1,12 +1,6 @@
 (function ($) {
-
   "use strict";
-
-  // ------------------------------------------------------------------------------ //
-  // Overlay Menu Navigation
-  // ------------------------------------------------------------------------------ //
   var overlayMenu = function () {
-
     if (!$('.nav-overlay').length) {
       return false;
     }
@@ -30,7 +24,6 @@
     };
     init();
   }
-
 
   // Portfolio Slider
   var swiper1 = new Swiper(".portfolio-Swiper", {
@@ -112,45 +105,37 @@
       var arrWords = new Array();
       $.each( words, function( key, value ) {
         newstr = '<span class="word">';
-
         for ( var i = 0, l = value.length; i < l; i++ ) {
           newstr += "<span class='letter' style='transition-delay:"+ ( delay + stagger * count ) +"ms;'>"+ value[ i ] +"</span>";
           count++;
         }
         newstr += '</span>';
-
         arrWords.push(newstr);
         count++;
       });
-
       this.innerHTML = arrWords.join("<span class='letter' style='transition-delay:"+ delay +"ms;'>&nbsp;</span>");
     });
   }
 
   // init Isotope
   var initIsotope = function() {
-    
     $('.grid').each(function(){
-
       // $('.grid').imagesLoaded( function() {
         // images have loaded
         var $buttonGroup = $( '.button-group' );
         var $checked = $buttonGroup.find('.is-checked');
         var filterValue = $checked.attr('data-filter');
-  
         var $grid = $('.grid').isotope({
           itemSelector: '.portfolio-item',
           // layoutMode: 'fitRows',
           filter: filterValue
         });
-    
         // bind filter button click
         $('.button-group').on( 'click', 'a', function(e) {
           e.preventDefault();
           filterValue = $( this ).attr('data-filter');
           $grid.isotope({ filter: filterValue });
         });
-    
         // change is-checked class on buttons
         $('.button-group').each( function( i, buttonGroup ) {
           $buttonGroup.on( 'click', 'a', function() {
@@ -159,7 +144,6 @@
           });
         });
       // });
-
     });
   }
 
@@ -172,7 +156,6 @@
   }
 
   $(document).ready(function () {
-
     overlayMenu();
     initTextFx();
     initChocolat();
@@ -187,15 +170,11 @@
       duration: 1200,
       // once: true,
     })
-
   });
-
 
   // window load
   $(window).load(function () {
     $(".preloader").fadeOut("slow");
     initIsotope();
   })
-
-
 })(jQuery);
